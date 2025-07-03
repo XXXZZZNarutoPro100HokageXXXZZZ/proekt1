@@ -1,0 +1,23 @@
+{% extends 'main\layout.html' %}
+{% load static %}
+{% block title %}
+  <title>Любимая музыка</title>
+  <link rel="stylesheet" href="{% static 'main/css/style2.css' %}">
+  {% endblock %}
+{% block main %}
+<article><h1>Любимая музыка из игр</h1>
+
+<p>В данной подборке я хотел бы привести музыку из видео игр, которая всегда поддерживает и вдохновляет меня. Приятного прослушивания)</p>
+
+<p>1. Vordt Of The Boreal Valley – Dark Souls 3</p>
+<div><audio controls><source src="{% static 'main/audio/Vordt Of The Boreal Valley.mp3' %}" type="audio/mpeg"></audio></div>
+<p>2. Take over – Persona 5 Royal</p>
+<div><audio controls> <source src="{% static 'main/audio/TakeOver.mp3' %}" type="audio/mpeg"></audio></div>
+<p>3. Cultist Base – Doom Eternal</p>
+<div><audio controls><source src="{% static 'main/audio/doom_eternal_02. Cultist Base.mp3' %}" type="audio/mpeg"></audio></div>
+<p>4. The Stains of Time – Metal Gear Rising Revengeance</p>
+<div><audio controls><source src="{% static 'main/audio/Metal Gear Rising Revengeance OST - The Stains of Time (1).mp3' %}" type="audio/mpeg"></audio></div>
+<p>5. Devil Trigger – Devil May Cry 5</p>
+<div><audio controls><source src="{% static 'main/audio/Casey Edwards - Devil Trigger.mp3' %}" type="audio/mpeg"></audio></div>
+</article>
+{% endblock %}

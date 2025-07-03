@@ -1,0 +1,44 @@
+{% extends 'main\layout.html' %}
+{% load static %}
+{% block title %}
+  <title>Статьи</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  {% endblock %}
+
+{% block main %}
+<div class="rovn">
+  <aside class="a">
+        <a href="{% url 'nier' %}">
+            <div><img src="{% static 'main/img/nier.jpg' %}"></div>
+            <span class="bord"><h3>Любимая музыка из игр</h3>
+        </a>
+        <p>В данной подборке я хотел бы привести музыку из видео игр, которая всегда поддерживает и вдохновляет меня. Приятного прослушивания)</p>
+    </span></aside> 
+    
+    <aside class="a">
+        <a href="{% url 'persona' %}">
+            <div><img src="{% static 'main/img/persona.png' %}"></div>
+            <h3>Мнение после прохождения Persona 5 Royal</h3>
+        </a>
+        <p>Недавно я все таки добрался до Persona 5 Royal и исчез из мира на 120 часов. Игра проходится на одном дыхании. До этого я был знаком только с 1 игрой серии – ремейком 3 части, который после пятерки кажется невероятно обрезанным и неполноценным.</p>
+    </aside> 
+    
+    <aside class="a">
+        <a href="{% url 'bmw' %}">
+            <div><img src="{% static 'main/img/bmw.png' %}"></div>
+            <h3>Первый взгляд на геймплей Black Myth Wukong</h3>
+        </a>
+        <p>Недавно вышел геймплейный трейлер Black Myth Wukong (приведенный ниже), который я посмотрел и готов поделиться с вами своими мыслями и эмоциями</p>
+    </aside>
+{% for el in news %}
+<aside class="a">
+  {% if el.image %}
+        <a href="{{ el.get_absolute_url }}"><div><img src="{{ el.image.url }}"></div></a>
+    {% endif %}
+    <h3><a href="{{ el.get_absolute_url }}">{{ el.title }}</a></h3>
+    <p>{{ el.intro }}</p>
+</aside>
+{% endfor %}
+</div>
+<div class="button-center"><button><a href="{% url 'create' %}">Добавить +</a></button></div>
+{% endblock %}

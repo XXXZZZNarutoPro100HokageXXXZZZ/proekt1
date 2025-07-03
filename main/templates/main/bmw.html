@@ -1,0 +1,17 @@
+{% extends 'main\layout.html' %}
+{% load static %}
+{% block title %}
+  <title>Любимая музыка</title>
+  <link rel="stylesheet" href="{% static 'main/css/style2.css' %}">
+  {% endblock %}
+{% block main %}
+<article> <h1>Геймплей Black Myth Wukong</h1>
+<p>Недавно посмотрел геймплейный трейлер Black Myth Wukong</p>
+<p>Очень разочарован, надеялся хотя бы на такое</p>
+<div><video controls src="{% static 'main/video/Обезьяна пират - обезьяна бегает с палкой.mp4' %}"></video></div>
+<p>А МЕХАНИКА смены облика выглядит как то так:</p>
+<div><video controls src="{% static 'main/video/ОБЕЗЬЯНА КЛОУН _ МУЖИК РЖЁТ НАД ОБЕЗЬЯНОЙ С ГРИМОМ КЛОУНА _ ТИКТОК МОМЕНТ МЕМ.mp4' %}"></video></div>
+</article>
+</main>
+
+{% endblock %}

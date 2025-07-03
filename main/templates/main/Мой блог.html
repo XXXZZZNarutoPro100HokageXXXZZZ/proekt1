@@ -1,0 +1,34 @@
+{% extends 'main\layout.html' %}
+{% load static %}
+{% block title %}
+  <title>Мой блог</title>
+  <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+  {% endblock %}
+
+{% block main %}
+<div class="rovn">
+    <aside class="a">
+        <a href="{% url 'nier' %}">
+            <div><img src="{% static 'main/img/nier.jpg' %}"></div>
+            <span class="bord"><h3>{% for el in mass %}{% if el == 'Любимая музыка из игр' %}Любимая музыка из игр{% endif %}{% endfor %}</h3>
+        </a>
+        <p>В данной подборке я хотел бы привести музыку из видео игр, которая всегда поддерживает и вдохновляет меня. Приятного прослушивания)</p>
+    </span></aside> 
+    
+    <aside class="a">
+        <a href="{% url 'persona' %}">
+            <div><img src="{% static 'main/img/persona.png' %}"></div>
+            <h3>{% for el in mass %}{% if el == 'Мнение после прохождения Persona 5 Royal' %}Мнение после прохождения Persona 5 Royal{% endif %}{% endfor %}</h3>
+        </a>
+        <p>Недавно я все таки добрался до Persona 5 Royal и исчез из мира на 120 часов. Игра проходится на одном дыхании. До этого я был знаком только с 1 игрой серии – ремейком 3 части, который после пятерки кажется невероятно обрезанным и неполноценным.</p>
+    </aside> 
+    
+    <aside class="a">
+        <a href="{% url 'bmw' %}">
+            <div><img src="{% static 'main/img/bmw.png' %}"></div>
+            <h3>{% for el in mass %}{% if el == 'Первый взгляд на геймплей Black Myth Wukong' %}Первый взгляд на геймплей Black Myth Wukong{% endif %}{% endfor %}</h3>
+        </a>
+        <p>Недавно вышел геймплейный трейлер Black Myth Wukong (приведенный ниже), который я посмотрел и готов поделиться с вами своими мыслями и эмоциями</p>
+    </aside>
+</div>
+{% endblock %}

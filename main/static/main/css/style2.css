@@ -1,0 +1,325 @@
+body{
+    margin:0px;
+background:linear-gradient(90deg,#d6a1b7,#c8d0ff);}
+
+.HF{
+    background: linear-gradient(90deg,red,blue);
+    height:120px;
+    border: solid white 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 60px;
+}
+
+main{
+    
+   
+    border-left: solid white 5px;
+    border-right: solid white 5px;}
+
+.logo{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+    position:absolute;
+    left: 120px;
+    top: 30px; }
+
+header div{
+    font-size: 45px;
+    color:white;
+    position: absolute;
+    left:220px;
+    top:40px;
+    text-align: center;
+margin-left: 30px;
+font-style: italic;
+font-family:Georgia, 'Times New Roman', Times, serif ;}
+header span{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    position: absolute;
+    left: 260px;
+    top: 90px;
+}
+header a { margin-right: 50px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    font-family:Georgia, 'Times New Roman', Times, serif ;}
+
+header a:link {color:white; text-decoration:none; }
+header a:visited {color:white; text-decoration:none}
+header a:hover {color:white; text-decoration:none}
+header a:active {color:white; text-decoration:none}
+header a:hover {transform: scale(1.2);}
+nav{
+    position: absolute;
+    right: 120px;
+    top: 50px;
+    font-size: 40px;}
+
+
+    footer div {
+        text-align: center;}
+    footer a { margin:25px;
+  display: inline-block;
+  }
+
+  footer img{
+    transition: transform 0.3s ease;
+    
+  }
+
+  footer img:hover{
+    transform: scale(1.2);}
+
+aside{ background-color: white;
+height: 500px;
+width: 370px;
+border-radius: 10%;
+z-index: 1;}
+aside img{
+    width:100%;
+    border-radius: 25px 25px 0px 0px;
+    transition: .5s; 
+    display: block;
+}
+aside div{
+    display: inline-block;
+    overflow: hidden;
+}
+aside img:hover{
+    transform: scale(1.2);
+}
+.a1{
+    position: absolute;
+    left: 100px;
+    bottom: 0px;}
+
+.a2{
+    position: absolute;
+    right: 575px;
+    bottom: 0px;}
+.a3{
+    position: absolute;
+    right: 100px;
+    bottom: 0px;
+}
+aside h3{
+    text-align: center;
+    font-size: 21px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 15px;
+    margin-top: 15px;
+}
+
+aside p{
+font-family: Arial, Helvetica, sans-serif;
+margin: 20px;
+margin-top: 30px;
+line-height: 1.5;
+text-align: justify;
+font-size: 16px;
+}
+
+aside a:link {color:darkred; text-decoration:none; }
+aside a:visited {color:darkred; text-decoration:none}
+aside a:hover {color:red; text-decoration:none}
+aside a:active {color:darkred; text-decoration:none}
+
+article{
+    margin-left: 120px;
+    margin-right: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 2;
+    text-align: justify;
+    text-indent: 3em;
+    background-color: white;
+     margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+   
+}
+article a:link {color:darkred; text-decoration:none; }
+article a:visited {color:darkred; text-decoration:none}
+article a:hover {color:red; text-decoration:none}
+article a:active {color:darkred; text-decoration:none}
+.portret{
+    height:500px;
+    margin-top: 10px;
+    border:5px solid darkred;
+    border-radius: 25px;
+}
+section article{
+    text-align: center;
+    text-indent: 0em;
+}
+section article h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 30px;
+    margin-top: 5px;
+    font-style: italic;
+    text-align: center;
+}
+article h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkred;
+    font-size: 30px;
+    
+    font-style: italic;
+    text-align: center;
+    text-indent: 0em;
+}
+
+::selection {
+    background: darkred; /* Цвет фона */
+    color: white;} /* Цвет текста */
+    audio{
+        width: 700px;
+    }
+   article div {
+    text-align: center;
+   }
+   article p{
+    margin-left: 170px;
+    margin-right: 170px;
+   }
+   article video{
+    width: 700px;
+   }
+   div article{
+    margin-top: 0px;
+    margin-bottom: 0px;
+   
+   }
+   .ramka{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: white;
+    margin-left: 120px;
+    margin-right: 120px;
+   }
+   .button-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.button-center button,
+.button-center .custom-file-label {
+    width: 320px;
+    min-width: 200px;
+    max-width: 100%;
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 22px 0;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-align: center;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+}
+
+.button-center button:hover,
+.button-center .custom-file-label:hover {
+    background-color: #a30000;
+}
+
+.button-center .custom-file-label {
+    /* убираем внутренние отступы у текста */
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-label {
+    background-color: darkred;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 0 8px;
+    margin-top: 20px;
+   
+}
+
+.custom-file-label:hover {
+    background-color: #a30000;
+}
+
+/*body.create-page .HF {
+    height: 70px;
+}
+body.create-page .logo {
+    width: 48px;
+    height: 48px;
+    top: 10px;
+    left: 40px;
+}
+body.create-page header div {
+    font-size: 28px;
+    left: 110px;
+    top: 18px;
+}
+body.create-page header span {
+    font-size: 14px;
+    left: 110px;
+    top: 50px;
+}
+body.create-page nav {
+    top: 18px;
+    font-size: 28px;
+    right: 40px;
+}*/
+  
+footer.HF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: linear-gradient(90deg,red,blue);
+    border: solid white 5px;
+    position: relative;
+    padding: 0 60px;
+}
+footer.HF div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+footer.HF a {
+    margin: 25px;
+    display: inline-block;
+}
+.tty{
+    text-align: center;
+}
+.reddel {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.3em; /* или 22px, если нужен фиксированный размер */
+}
+  

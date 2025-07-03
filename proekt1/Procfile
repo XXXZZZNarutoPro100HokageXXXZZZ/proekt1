@@ -1,0 +1,1 @@
+web: gunicorn proekt1.wsgi: aplication --workers=2
