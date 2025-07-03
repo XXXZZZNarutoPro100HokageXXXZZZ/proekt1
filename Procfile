@@ -1,1 +1,1 @@
-web: gunicorn proekt1.wsgi: application --workers=2
+web: gunicorn proekt1.wsgi:application --workers=2
